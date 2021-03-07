@@ -1,6 +1,6 @@
 Data model:
 
-![image](https://user-images.githubusercontent.com/35430575/110251852-9f08b480-7f93-11eb-8d21-69df8ae5cbe3.png | width=400)
+<img src="https://user-images.githubusercontent.com/35430575/110251852-9f08b480-7f93-11eb-8d21-69df8ae5cbe3.png" width="100" height="100">
 
 
 
