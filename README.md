@@ -1,5 +1,7 @@
 Data model:
-[image](https://user-images.githubusercontent.com/35430575/110251795-40433b00-7f93-11eb-828d-4de04680beb7.png)
+
+![image](https://user-images.githubusercontent.com/35430575/110251852-9f08b480-7f93-11eb-8d21-69df8ae5cbe3.png)
+
 
 
 Domain model:
