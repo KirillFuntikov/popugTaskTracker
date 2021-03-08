@@ -1,0 +1,49 @@
+.container
+  p#notice = notice
+  
+  .row
+    .col-6
+      table
+        thead
+          tr
+            th Name
+            th Desc
+            th
+            th
+            th
+
+        tbody
+          h3.mb-3 Opened tasks
+          - @open_tasks.each do |task|
+            tr
+              td = task.name
+              td = task.description
+              td = link_to "Close!", controller: "tasks", action: "close", id: task
+              td = link_to 'Show', task
+              td = link_to 'Edit', edit_task_path(task)
+              td = link_to 'Destroy', task, data: { confirm: 'Are you sure?' }, method: :delete
+
+    .col-6
+      table
+        thead
+          tr
+            th Name
+            th Desc
+            th
+            th
+            th
+
+        tbody
+          h3.mb-3 Closed tasks
+          - @closed_tasks.each do |task|
+            tr
+              td = task.name
+              td = task.description
+              td = link_to "Open!", controller: "tasks", action: "open", id: task
+              td = link_to 'Show', task
+              td = link_to 'Edit', edit_task_path(task)
+              td = link_to 'Destroy', task, data: { confirm: 'Are you sure?' }, method: :delete
+
+  br
+
+  = link_to 'New Task', new_task_path
